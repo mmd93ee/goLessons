@@ -1,0 +1,17 @@
+Install Ubuntu
+Get it on the network
+Firewall setup (ufw) and add required ports (ufw allow proto tcp from any to any port 80,443)
+
+#Kills CPU...
+Install microk8s (sudo snap install microk8s --classic)
+Enable services (sudo microk8s enable dashboard dns registry istio)
+Start (microk8s kubectl get all --namespaces)
+Set kubectl (alias mkctl="microk8s kubectl)
+Access Dashboard (microk8s dashboard-proxy)
+Starting and Stopping (microk8s start/stop)
+
+#Set up git
+Clone repo: git clone <https target>
+Cache PAT: git config --global credential.helper store
+
+
